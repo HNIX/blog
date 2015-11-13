@@ -10,14 +10,24 @@
 </head>
 <body>
   <header id="main_navigation" class="clearfix">
-      <a href="#" class="name">Hunter Nix</a>
-      <nav>
-        <%= link_to "Articles", posts_path %>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-      </nav>
-  	</header>
+    <%= link_to "Hunter Nix", root_path, class: "name" %>
+    <nav>
+      <%= link_to "Articles", posts_path %>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
 <%= yield %>
+
+<footer id="main_footer">
+  <p class="copyright">&copy;2015 Hunter Nix</p>
+  <nav>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
+    <a href="#"><i class="fa fa-dribbble"></i></a>
+  </nav>
+</footer>
 
 </body>
 </html>

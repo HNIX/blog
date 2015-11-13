@@ -1,6 +1,7 @@
 @import 'normalize';
 
 $dark: #424652;
+$white: #FFFFFF;
 $light: #9a9da4;
 $highlight: #8bc6db;
 $border: #E9E9E9;
@@ -20,6 +21,12 @@ body {
 
 .wrapper_padding {
 	padding: 4rem 0;
+}
+
+.skinny_wrapper {
+	width: 80%;
+	max-width: 760px;
+	margin: 0 auto;
 }
 
 .clearfix:before, 
@@ -67,6 +74,14 @@ p, li {
 p, ul, ol {
 	margin: 0 0 1.6em 0;
 }
+hr {
+	  width: 3em;
+	  display: block;
+	  height: 2px;
+	  border: 0;
+	  border-top: 2px solid $highlight;
+	  margin: 2rem 0;
+	}
 
 #main_navigation {
 	padding: 2.5em 5%;
@@ -88,10 +103,19 @@ p, ul, ol {
 	  a{
 	    color: $dark;
 	    text-decoration: none;
-	    margin: 0 0 0 20px;
+	    margin: 0 1rem;
+	    font-size: 1rem;
 
 	  }
 	}
+}
+
+#page_title {
+	text-align: center;
+	border-bottom: 1px solid $border;
+	padding: 3em 0;
+	font-size: 1rem;
+	text-transform: uppercase;
 }
 
 #main_footer {
@@ -116,3 +140,4 @@ p, ul, ol {
 }
 
 @import 'welcome';
+@import 'post_project';
