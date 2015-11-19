@@ -1,0 +1,24 @@
+<%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+    <h2><%= pluralize(@user.errors.count, "error") %> prevented this project from saving:</h2>
+    <ul>
+    	<% @user.errors.full_messages.each do |msg| %>
+    	  <li><%= msg %></li>
+    	<% end %>
+    </ul>
+  <% end %>
+
+  <%= f.label :email %><br>
+  <%= f.text_field :email %>
+  
+  <br>
+  <br>
+
+  <%= f.label :about %><br>
+  <%= f.text_area :about %>
+
+  <br>
+  <br>
+
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,11 @@
+<div id="post_show_content" class="skinny_wrapper wrapper_padding" >
+	<div id="content">
+		<h4><%= @user.email %></h4><br><br>
+		<p><%= @user.about %></p>
+		<br>
+		<br>
+		<div id="admin_links">
+		  <%= link_to "Edit Profile", edit_user_path %>
+		</div>
+	</div>
+</div>
