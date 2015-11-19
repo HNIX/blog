@@ -21,7 +21,7 @@ class UsersController < ApplicationController
 
   private
   def find_user
-    @user = User.find(params[:id])
+    @user = User.find(1)
   end 
   def user_params
     params.require(:user).permit(:email, :about)
