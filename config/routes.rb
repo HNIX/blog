@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :projects
   resources :contacts, only: [:new, :create]
   resources :users
+  resources :videos
   get 'welcome/index'
   root 'welcome#index'
 
