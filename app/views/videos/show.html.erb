@@ -5,6 +5,9 @@
 	<hr>
 </header>
 <div id="content">
+  <div class="embed-container">
+	<%= embed(@video.link) %>
+  </div>
 	<%= markdown @video.description %>
 	<div class="button_wrapper">
 	<a href="<%= @video.link %>" class="project_button" target="_blank">Visit <%= @video.title %></a></div>
