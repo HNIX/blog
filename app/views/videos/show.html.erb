@@ -1,26 +1,21 @@
-<div id="post_show_content" class="skinny_wrapper wrapper_padding" >
-<header>
-	<p class="date"><%= @video.created_at.strftime('%A, %b %d') %></p>
-	<h1><%= @video.title %></h1>
-	<hr>
-</header>
+<div id="post_show_content" class="wrapper wrapper_padding" >
 <div id="content">
   <div class="embed-container">
 	<%= embed(@video.link) %>
   </div>
+  <header>
+    <p class="date"><%= @video.created_at.strftime('%A, %b %d') %></p>
+	<h1><%= @video.title %></h1>
+  </header>
 	<%= markdown @video.description %>
-	<div class="button_wrapper">
-	<a href="<%= @video.link %>" class="project_button" target="_blank">Visit <%= @video.title %></a></div>
 </div>
-
-
 <% if user_signed_in? %>
   <div id="admin_links">
   	<%= link_to "Edit", edit_video_path(@video) %>
     <%= link_to "Delete", project_path(@video), method: :delete, data: {confirm: "Are you sure?"} %>
   </div>
 <% end %>
-
-
-<hr>
+<div class="skinny_wrapper">
+<%= render 'disqus' %>
+</div>
 </div>
