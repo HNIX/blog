@@ -1,23 +1,154 @@
 <div class="wrapper wrapper_padding clearfix">
-  <div class="col-1 about homepage_content">
-    <h2>About</h2>
-    <hr>
-    <p><%= @user.about %></p>
-  </div>
-  <div class="col-2 homepage_content">
-    <h2>Stuff I've Written</h2>
-    <hr>
-    <% @posts.each do |post| %>
-      <h3><%= link_to post.title, post %></h3>
-	    <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-    <% end %>
-  </div>
-  <div class="col-3 homepage_content">
-    <h2>Stuff I've Built</h2>
-    <hr>
-    <% @projects.each do |project| %>
-      <h3><%= link_to project.title, project %></h3>
-      <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
-    <% end %>
-  </div>
+  <section class="section swatch-red-white">
+    <div class="container">
+      <header class="section-header underline">
+          <h1 class="headline hyper hairline">Angle</h1>
+          <p class="big">flat design, from another angle</p>
+      </header>
+    </div>
+  </section>
+  <section class="section swatch-white-red has-top">
+    <div class="decor-top">
+        <svg class="decor" height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0 L100 100 L0 100" stroke-width="0"></path>
+        </svg>
+    </div>
+    <div class="container">
+      <header class="section-header underline">
+          <h1 class="headline super hairline">About</h1>
+          <p class=""><%= @user.about %></p>
+      </header>
+      <div class="row">
+        <ul class="list-unstyled row box-list ">
+          <li class="col-md-3 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".0s">
+            <div class="box-round">
+              <div class="box-dummy"></div>
+              <a class="box-inner " href="single-service.html">
+                  <%= image_tag("custom-icon-composer.png", class: "svg-inject") %>
+              </a>
+            </div>
+              <h3 class="text-center ">
+                <a href="single-service.html">Retina ready</a>
+              </h3>
+              <p class="text-center">Angle is build to look sharp ,cool and awesome on all displays. Images will look sharp and clear.</p>
+          </li>
+          <li class="col-md-3 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".3s">
+            <div class="box-round">
+                <div class="box-dummy"></div>
+                <a class="box-inner " href="single-service.html">
+                    <%= image_tag("custom-icon-bag.png", class: "svg-inject") %>
+                </a>
+            </div>
+            <h3 class="text-center ">
+              <a href="single-service.html">Free updates</a>
+            </h3>
+            <p class="text-center">No need to worry on keeping your theme updated. With Angle you get free updates for life.</p>
+          </li>
+          <li class="col-md-3 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".6s">
+            <div class="box-round">
+                <div class="box-dummy"></div>
+                <a class="box-inner " href="single-service.html">
+                    <%= image_tag("custom-icon-iphone-white.png", class: "svg-inject") %>
+                </a>
+            </div>
+            <h3 class="text-center ">
+              <a href="single-service.html">Responsive Design</a>
+            </h3>
+            <p class="text-center">We have designed this site mobile first so it looks great on mobile devices of all sizes.</p>
+          </li>
+          <li class="col-md-3 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".9s">
+            <div class="box-round">
+                <div class="box-dummy"></div>
+                <a class="box-inner " href="single-service.html">
+                    <%= image_tag("custom-icon-clipboard.png", class: "svg-inject") %>
+                </a>
+            </div>
+            <h3 class="text-center ">
+              <a href="single-service.html">100% support</a>
+            </h3>
+            <p class="text-center">With Angle as with all our themes you will receive our 100% rock solid support.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="section swatch-red-white has-top">
+    <div class="decor-top">
+      <svg class="decor" height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 100 L100 0 L100 100" stroke-width="0"></path>
+      </svg>
+    </div>
+    <div class="container">
+      <header class="section-header text-center underline">
+          <h1 class="headline super hairline">Our Latest Work</h1>
+      </header>
+      <div class="text-default os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".0s">
+        <div class="portfolio isotope magnific-all no-transition portfolio-hex portfolio-shadows row">
+          <% @projects.each do |project| %>
+            <div class="portfolio-item infinite-item col-md-4 col-sm-4 filter-gallery filter-image">
+                <figure class="portfolio-figure">
+                    <a href="portfolio-item-big.html">
+                        <%= image_tag("img-8-600x518.png", class: "img-responsive", width: "600", height: "518" ) %>
+                    </a>
+                    <figcaption>
+                        <h4>
+                          <%= link_to project.title, project %>
+                        </h4>
+                        <p><%= project.created_at.strftime("%A, %b %d") %></p>
+                        <p><%= truncate project.description, length: 50 %></p>
+                        <a class="link" href="portfolio-item-big.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section swatch-white-red">
+    <div class="container">
+      <header class="section-header underline text-center">
+          <h1 class="headline super hairline">Latest news</h1>
+      </header>
+      <div class="carousel slide" id="news2">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="row">
+              <% @posts.each do |post| %>
+                <div class="col-md-4">
+                  <div class="grid-post swatch-red-white">
+                    <article class="post post-showinfo">
+                      <div class="post-media">
+                      </div>
+                        <div class="post-head text-center">
+                            <h3 class="post-title">
+                              <%= link_to post.title, post %>
+                            </h3>
+                            <small class="post-author">
+                              <%= post.created_at.strftime("%A, %b %d") %>
+                            </small>
+                            <div class="post-icon flat-shadow flat-hex">
+                                <div class="hex hex-big">
+                                    <i class="fa fa-file-text"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-body">
+                          <p>
+                            <%= truncate post.content, length: 160 %>
+                          </p>
+                          <%= link_to "read more", post %>
+                        </div>
+                    </article>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
