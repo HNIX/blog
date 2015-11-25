@@ -1,11 +1,59 @@
-<h1 id="page_title">Stuff I've Built</h1>
-
-<div id="posts_wrapper" class="skinny_wrapper">
-	<% @projects.each do |project| %>
-	  <div class="post">
-	  	<p class="date"><%= project.created_at.strftime('%A, %B %d') %></p>
-	  	<h2><%= link_to project.title, project %></h2>
-	  	<hr>
-	  </div>
-	  <% end %>
+<div id="content" role="main">
+	<section class="section swatch-blue-white">
+	    <div class="container">
+	        <header class="section-header text-center underline">
+	            <h1 class="headline hyper hairline">Our Work</h1>
+	        </header>
+	        <div class="row">
+	            <div class="text-default os-animation">
+	                <div class="portfolio isotope magnific-all no-transition portfolio-hex portfolio-shadows row">
+	                    <% @projects.each do |project| %>
+		                    <div class="portfolio-item infinite-item col-md-4 col-sm-4 filter-gallery filter-image">
+		                        <figure class="portfolio-figure">
+		                            <a href="portfolio-item-big.html">
+		                                <%= image_tag("img-8-600x518.png", class: "img-responsive", width: "600", height: "518" ) %>
+		                            </a>
+		                            <figcaption>
+		                                <h4>
+		                                	<%= link_to project.title, project %>
+		                                </h4>
+										<small>
+		                                  <%= project.created_at.strftime('%A, %B %d') %>
+		                                </small>
+		                                <p><%= truncate project.description, length:75 %></p>
+		                                <a class="link" href="portfolio-item-big.html">
+		                                    <i class="fa fa-link"></i>
+		                                </a>
+		                            </figcaption>
+		                        </figure>
+		                    </div>
+	                    <% end %>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<section class="section swatch-white-blue has-top">
+	    <div class="decor-top">
+	        <svg class="decor" height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+	            <path d="M0 100 L50 0 L100 100" stroke-width="0"></path>
+	        </svg>
+	    </div>
+	    <div class="container">
+	        <header class="section-header underline">
+	            <h1 class="headline super hairline">Got an idea?</h1>
+	            <p class="">He&#x27;s the exact opposite of the hero. And most times they&#x27;re friends, like you and me! I should&#x27;ve known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
+	        </header>
+	        <div class="text-center">
+	            <a class="btn btn-primary btn-lg btn-icon-right pull-center" href="#">
+	Lets make it happen
+	<div class="hex-alt hex-alt-big">
+	<i class="fa fa-rocket" data-animation="tada"></i>
+	</div>
+	</a>
+	        </div>
+	    </div>
+	</section>
 </div>
+
+

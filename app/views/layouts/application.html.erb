@@ -4,14 +4,13 @@
     <title>Hunter Nix - Marketing Technologist</title>
       <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-      <link href="all.css" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
   <body class="pace-on pace-dot">
     <div class="pace-overlay"></div>
-    <header id="masthead" class="navbar navbar-sticky swatch-red-white" role="banner">
+    <header id="masthead" class="navbar navbar-sticky swatch-blue-white" role="banner">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".main-navbar">
@@ -69,7 +68,7 @@
   <%= yield %>
 
   <footer id="footer" role="contentinfo">
-      <section class="section swatch-red-white has-top">
+      <section class="section swatch-blue-white has-top">
           <div class="decor-top">
               <svg class="decor" height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0 L50 100 L100 0 L100 100 L0 100" stroke-width="0"></path>
@@ -112,7 +111,7 @@
   <a class="go-top hex-alt" href="javascript:void(0)">
     <i class="fa fa-angle-up"></i>
   </a>
-  <script src="packages.min.js"></script>
-  <script src="theme.min.js"></script>
+  <%= javascript_include_tag 'packages', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'theme.min', 'data-turbolinks-track' => true %>
   </body>
 </html>

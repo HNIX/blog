@@ -24,6 +24,9 @@ module Blog
         config.assets.paths << path
     end
 
+    Rails.application.config.assets.precompile += %w( packages.js )
+    Rails.application.config.assets.precompile += %w( theme.min.js )
+
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
   end
