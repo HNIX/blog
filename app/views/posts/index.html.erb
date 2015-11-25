@@ -1,13 +1,104 @@
-<h1 id="page_title">Stuff I've Written</h1>
-
-<div id="posts_wrapper" class="skinny_wrapper">
-	<% @posts.each do |post| %>
-	  <div class="post">
-	  	<p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
-	  	<h2><%= link_to post.title, post %></h2>
-	  	<hr>
-	  </div>
-	  <% end %>
+<div id="content" role="main">
+    <section class="section swatch-red-white">
+        <div class="container">
+            <header class="section-header no-underline">
+                <h1 class="headline hyper hairline">Latest news</h1>
+            </header>
+        </div>
+    </section>
+    <section class="section swatch-white-red has-top">
+        <div class="decor-top">
+            <svg class="decor" height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0 L50 100 L100 0 L100 100 L0 100" stroke-width="0"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                	<% @posts.each do |post| %>
+	                    <article class="post post-showinfo">
+	                        <div class="post-head small-screen-center">
+	                            <h2 class="post-title">
+	                            	<%= link_to post.title, post %>
+	                            </h2>
+	                            <small class="post-date">
+	                            	<%= post.created_at.strftime('%A, %B %d') %>
+	                            </small>
+	                            <div class="post-icon flat-shadow flat-hex">
+	                                <div class="hex hex-big">
+	                                    <i class="fa fa-file-text"></i>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="post-body">
+	                            <p>
+	                                <%= truncate post.content, length: 200 %>
+	                            </p>
+	                            <%= link_to "read more", post %>
+	                        </div>
+	                    </article>
+                    	<hr>
+                    <% end %>
+                    <div class="text-center post-showinfo">
+                        <%= will_paginate @posts %>
+                    </div>
+                </div>
+                <aside class="col-md-3 sidebar">
+                    <div class="sidebar-widget widget_search">
+                        <form>
+                            <div class="input-group">
+                                <input class="form-control" placeholder="search" type="text">
+                                <span class="input-group-btn">
+                                	<button class="btn" type="submit">
+                                		<i class="fa fa-search"></i>
+                                	</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sidebar-widget widget_recent_entries">
+                        <h3 class="sidebar-header">Recent posts</h3>
+                        <ul>
+                        	<% @posts.each do |post| %>
+	                            <li>
+	                                <div class="post-icon">
+	                                    <i class="fa fa-file-text"></i>
+	                                </div>
+	                                <%= link_to post.title, post %>
+	                                <small><%= post.created_at.strftime('%A, %B %d') %></small>
+	                            </li>
+                            <% end %>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget widget_oxy_twitter">
+                        <h3 class="sidebar-header">Twitter feed</h3>
+                        <ul>
+                            <li>
+                                RT @<a href="http://twitter.com/maguay">maguay</a>: Making a new @
+                                <a href="http://twitter.com/TryGhost">TryGhost</a>
+                                theme? @
+                                <a href="http://twitter.com/Envato">Envato</a>
+                                and @
+                                <a href="http://twitter.com/ThemeForest">ThemeForest</a>
+                                have doubled their bounty for great new themes:
+                                <a href="http://t.co/MqpDozDevG" rel="nofollow">http://t.co/MqpDozDevG</a>
+                                <small class="block text-italic">1&nbsp;day&nbsp;ago</small>
+                            </li>
+                            <li>
+                                RT @<a href="http://twitter.com/maguay">maguay</a>: Making a new @
+                                <a href="http://twitter.com/TryGhost">TryGhost</a>
+                                theme? @
+                                <a href="http://twitter.com/Envato">Envato</a>
+                                and @
+                                <a href="http://twitter.com/ThemeForest">ThemeForest</a>
+                                have doubled their bounty for great new themes:
+                                <a href="http://t.co/MqpDozDevG" rel="nofollow">http://t.co/MqpDozDevG</a>
+                                <small class="block text-italic">1&nbsp;day&nbsp;ago</small>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
 </div>
-
-<%= will_paginate @posts %>
