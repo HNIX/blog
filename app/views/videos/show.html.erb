@@ -1,28 +1,63 @@
-<div id="post_show_content" class="wrapper wrapper_padding_video" >
-  <div id="content">
-    <div class="embed-container">
-  	  <%= embed(@video.link) %>
-    </div>
-    <br>
-    <div class="video_header">
-  	  <h1><%= @video.title %></h1>
-      <hr>
-    </div>
-  </div>
-
-  <div class="skinny_wrapper_left">
-    <p class="date"><%= @video.created_at.strftime('%A, %b %d') %></p>
-    <%= markdown @video.description %>
-    <hr>
-    <h4>Comments</h4>
-    <%= render 'disqus' %>
-  </div>
-
-  <% if user_signed_in? %>
-    <div id="admin_links">
-      <%= link_to "Edit", edit_video_path(@video) %>
-      <%= link_to "Delete", project_path(@video), method: :delete, data: {confirm: "Are you sure?"} %>
-    </div>
-  <% end %>
-
+<div id="content" role="main">
+  <section class="section swatch-white-blue">
+      <div class="container">
+          <figure class="portfolio-video">
+              <div class="video-wrapper">
+                  <div class="fluid-width-video-wrapper" style="padding-top: 50%;">
+                      <%= embed(@video.link) %>
+                  </div>
+              </div>
+          </figure>
+          <div class="row">
+              <div class="col-md-9">
+                  <h1 class="super hairline bordered-header"><%= @video.title %></h1>
+                  <small><%= @video.created_at.strftime('%A, %b %d') %></small>
+                  <p class="lead">
+                    <%= markdown @video.description %>
+                  </p>
+                  <% if user_signed_in? %>
+                    <div id="admin_links">
+                      <%= link_to "Edit", edit_video_path(@video) %>
+                      <%= link_to "Delete", project_path(@video), method: :delete, data: {confirm: "Are you sure?"} %>
+                    </div>
+                  <% end %>
+                  <br>
+                  <br>
+                  <h1>Comments</h1>
+                  <%= render 'disqus' %>
+              </div>
+              <div class="col-md-3">
+                  <a class="portfolio-url overlay" href="<%= @video.link %>">
+                      <span class="overlay">URL</span>
+                      Go to video
+                  </a>
+                  <div class="portfolio-share overlay">
+                      <span class="overlay">Share</span>
+                      <ul class="list-inline">
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-pinterest"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-google-plus"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 </div>

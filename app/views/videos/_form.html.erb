@@ -1,30 +1,31 @@
-<%= form_for @video do |f| %>
-  <% if @video.errors.any? %>
-    <h2><%= pluralize(@video.errors.count, "error") %> prevented this video from saving:</h2>
-    <ul>
-    	<% @video.error.full_messages.each do |msg| %>
-    	  <li><%= msg %></li>
-    	<% end %>
-    </ul>
-  <% end %>
-
-  <%= f.label :title %><br>
-  <%= f.text_field :title %>
-  
-  <br>
-  <br>
-
-  <%= f.label :description %><br>
-  <%= f.text_area :description %>
-
-  <br>
-  <br>
-
-  <%= f.label :link %><br>
-  <%= f.text_field :link %>
-
-  <br>
-  <br>
-
-  <%= f.submit %>
-<% end %>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for @video, :html => {:class => "contact-form", :id => "contactForm"} do |f| %>
+      <div id="messages">
+        <% if @video.errors.any? %>
+          <h2><%= pluralize(@video.errors.count, "error") %> prevented this video from saving:</h2>
+          <ul>
+            <% @video.error.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+            <% end %>
+          </ul>
+        <% end %>
+      </div>
+      <div class="form-group form-icon-group">
+        <%= f.text_field :title, class: "form-control", :placeholder => "Title" %>
+        <i class="fa fa-user"></i>
+      </div>
+      <div class="form-group form-icon-group">
+        <%= f.text_area :description, class: "form-control", :placeholder => "Describe the project" %>
+        <i class="fa fa-pencil"></i>
+      </div>
+      <div class="form-group form-icon-group">
+        <%= f.text_field :link, class: "form-control", :placeholder => "Link to the project" %>
+        <i class="fa fa-pencil"></i>
+      </div>
+      <div class="form-group text-center">
+        <%= f.submit "Submit", class: "btn btn-primary btn-icon btn-icon-right" %>
+      </div>
+    <% end %>
+  </div>
+</div>

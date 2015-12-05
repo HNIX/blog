@@ -1,23 +1,60 @@
-<div id="post_show_content" class="skinny_wrapper wrapper_padding" >
-<header>
-	<p class="date"><%= @project.created_at.strftime('%A, %b %d') %></p>
-	<h1><%= @project.title %></h1>
-	<hr>
-</header>
-<div id="content">
-	<%= markdown @project.description %>
-	<div class="button_wrapper">
-	<a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %></a></div>
-</div>
-
-
-<% if user_signed_in? %>
-  <div id="admin_links">
-  	<%= link_to "Edit", edit_project_path(@project) %>
-    <%= link_to "Delete", project_path(@project), method: :delete, data: {confirm: "Are you sure?"} %>
-  </div>
-<% end %>
-
-
-<hr>
+<div id="content" role="main">
+    <section class="section swatch-white-blue">
+        <div class="container">
+            <div class="text-center small-screen-center portfolio-header">
+                <h1 class="headline super hairline">Sample project</h1>
+            </div>
+            <figure class="portfolio-figure">
+                <a class="magnific hover-animate" href="assets/images/design/vector/img-3-1200x800.png" title="Thats a nice image">
+                    <img alt="some image" src="assets/images/design/vector/img-3-1200x600.png">
+                    <i class="fa fa-search-plus"></i>
+                </a>
+            </figure>
+            <div class="row">
+                <div class="col-md-9">
+                    <small><%= @project.created_at.strftime('%A, %b %d') %></small>
+                    <p class="lead">
+                        <%= markdown @project.description %>
+                    </p>
+                    <% if user_signed_in? %>
+					  <div id="admin_links">
+					  	<%= link_to "Edit", edit_project_path(@project) %>
+					    <%= link_to "Delete", project_path(@project), method: :delete, data: {confirm: "Are you sure?"} %>
+					  </div>
+					<% end %>
+                </div>
+                <div class="col-md-3">
+                    <a class="portfolio-url overlay" href="<%= @project.link %>">
+                        <span class="overlay">URL</span>
+                        <%= @project.link %>
+                    </a>
+                    <div class="portfolio-share overlay">
+                        <span class="overlay">Share</span>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
