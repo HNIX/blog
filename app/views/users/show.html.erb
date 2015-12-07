@@ -1,13 +1,32 @@
-<div id="post_show_content" class="skinny_wrapper wrapper_padding" >
-	<div id="content">
-		<h4><%= @user.email %></h4><br><br>
-		<p><%= @user.about %></p>
-		<br>
-		<br>
-		<div id="admin_links">
-		  <%= link_to "Edit Profile", edit_user_path %>
-		  <%= link_to "New Post", new_post_path %>
-		  <%= link_to "New Project", new_project_path %>
-		</div>
-	</div>
+<div id="content" role="main">
+    <section class="section swatch-white-blue">
+        <div class="container">
+            <div class="text-center small-screen-center portfolio-header">
+                <h1 class="headline super hairline">Profile</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <h2><%= @user.email %></h2>
+                    <p class="lead">
+                        <%= @user.about %>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <div class="portfolio-share overlay">
+                        <ul class="list-inline">
+                            <li>
+                                <%= link_to "Edit Profile", edit_user_path %>
+                            </li>
+                            <li>
+                                <%= link_to "New Post", new_post_path %>
+                            </li>
+                            <li>
+                                <%= link_to "New Project", new_project_path %>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>

@@ -1,11 +1,14 @@
 <div class="wrapper wrapper_padding clearfix">
   <section class="section swatch-blue-white">
-    <div class="container">
-      <header class="section-header underline">
-          <h1 class="headline hyper hairline">Angle</h1>
-          <p class="big">flat design, from another angle</p>
-      </header>
-    </div>
+      <div class="background-media" style="background-image: url(<%= asset_path 'Code-bg.png' %>) ; background-repeat: ; background-size: ; background-attachment: ; background-position: ; background-size: cover;" data-start="background-position: 50% 0px"
+      data-top-bottom="background-position: 50% -200px">
+      </div>
+      <div class="background-overlay" style="background-color:rgba(40,57,65,0.8)"></div>
+      <div class="container" style="height: 360px;">
+         <!--  <header class="section-header underline">
+              <h1 class="headline hyper hairline"></h1>
+          </header> -->
+      </div>
   </section>
   <section class="section swatch-white-blue has-top">
     <div class="decor-top">
@@ -19,136 +22,89 @@
           <p class=""><%= @user.about %></p>
       </header>
       <div class="row">
-        <ul class="list-unstyled row box-list ">
-          <li class="col-md-3 text-center os-animation">
-            <div class="box-round">
-              <div class="box-dummy"></div>
-              <a class="box-inner " href="single-service.html">
-                  <%= image_tag("custom-icon-composer.png", class: "svg-inject") %>
-              </a>
-            </div>
-              <h3 class="text-center ">
-                <a href="single-service.html">Retina ready</a>
-              </h3>
-              <p class="text-center">Angle is build to look sharp ,cool and awesome on all displays. Images will look sharp and clear.</p>
-          </li>
-          <li class="col-md-3 text-center os-animation">
-            <div class="box-round">
-                <div class="box-dummy"></div>
-                <a class="box-inner " href="single-service.html">
-                    <%= image_tag("custom-icon-bag.png", class: "svg-inject") %>
-                </a>
-            </div>
-            <h3 class="text-center ">
-              <a href="single-service.html">Free updates</a>
-            </h3>
-            <p class="text-center">No need to worry on keeping your theme updated. With Angle you get free updates for life.</p>
-          </li>
-          <li class="col-md-3 text-center os-animation">
-            <div class="box-round">
-                <div class="box-dummy"></div>
-                <a class="box-inner " href="single-service.html">
-                    <%= image_tag("custom-icon-iphone-white.png", class: "svg-inject") %>
-                </a>
-            </div>
-            <h3 class="text-center ">
-              <a href="single-service.html">Responsive Design</a>
-            </h3>
-            <p class="text-center">We have designed this site mobile first so it looks great on mobile devices of all sizes.</p>
-          </li>
-          <li class="col-md-3 text-center os-animation">
-            <div class="box-round">
-                <div class="box-dummy"></div>
-                <a class="box-inner " href="single-service.html">
-                    <%= image_tag("custom-icon-clipboard.png", class: "svg-inject") %>
-                </a>
-            </div>
-            <h3 class="text-center ">
-              <a href="single-service.html">100% support</a>
-            </h3>
-            <p class="text-center">With Angle as with all our themes you will receive our 100% rock solid support.</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="section swatch-blue-white has-top">
-    <div class="decor-top">
-      <svg class="decor" height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 100 L100 0 L100 100" stroke-width="0"></path>
-      </svg>
-    </div>
-    <div class="container">
-      <header class="section-header text-center underline">
-          <h1 class="headline super hairline">Our Latest Work</h1>
-      </header>
-      <div class="text-default os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".0s">
-        <div class="portfolio isotope magnific-all no-transition portfolio-hex portfolio-shadows row">
-          <% @projects.each do |project| %>
-            <div class="portfolio-item infinite-item col-md-4 col-sm-4 filter-gallery filter-image">
-                <figure class="portfolio-figure">
-                    <a href="portfolio-item-big.html">
-                        <%= image_tag("img-8-600x518.png", class: "img-responsive", width: "600", height: "518" ) %>
-                    </a>
-                    <figcaption>
-                        <h4>
-                          <%= link_to project.title, project %>
-                        </h4>
-                        <small><%= project.created_at.strftime("%A, %b %d") %></small>
-                        <p><%= truncate project.description, length: 50 %></p>
-                        <a class="link" href="portfolio-item-big.html">
-                            <i class="fa fa-link"></i>
-                        </a>
-                    </figcaption>
-                </figure>
-            </div>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section swatch-white-blue">
-    <div class="container">
-      <header class="section-header underline text-center">
-          <h1 class="headline super hairline">Latest news</h1>
-      </header>
-      <div class="carousel slide" id="news2">
-        <div class="carousel-inner">
-          <div class="item active">
-            <div class="row">
-              <% @posts.each do |post| %>
-                <div class="col-md-4">
-                  <div class="grid-post swatch-blue-white">
-                    <article class="post post-showinfo">
-                      <div class="post-media">
+        <div class="col-md-9">
+          <% @combined_sorted.each do |cs| %>
+              <article class="post post-showinfo">
+                  <div class="post-head small-screen-center">
+                      <h2 class="post-title">
+                        <%= link_to cs.title, cs %>
+                      </h2>
+                      <small class="post-date">
+                        <%= cs.created_at.strftime('%A, %B %d') %>
+                      </small>
+                      <div class="post-icon flat-shadow flat-hex">
+                          <div class="hex hex-big">
+                              <i class="fa fa-file-text"></i>
+                          </div>
                       </div>
-                        <div class="post-head text-center">
-                            <h3 class="post-title">
-                              <%= link_to post.title, post %>
-                            </h3>
-                            <small class="post-author">
-                              <%= post.created_at.strftime("%A, %b %d") %>
-                            </small>
-                            <div class="post-icon flat-shadow flat-hex">
-                                <div class="hex hex-big">
-                                    <i class="fa fa-file-text"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-body">
-                          <p>
-                            <%= truncate post.content, length: 160 %>
-                          </p>
-                          <%= link_to "read more", post %>
-                        </div>
-                    </article>
                   </div>
-                </div>
-              <% end %>
+                  <div class="post-body">
+                      <p>
+                      </p>
+                      <%= link_to "read more", cs %>
+                  </div>
+              </article>
+              <hr>
+            <% end %>
+            <div class="text-center post-showinfo">
             </div>
-          </div>   
         </div>
-      </div>
+        <aside class="col-md-3 sidebar">
+            <div class="sidebar-widget widget_search">
+                <form>
+                    <div class="input-group">
+                        <input class="form-control" placeholder="search" type="text">
+                        <span class="input-group-btn">
+                          <button class="btn" type="submit">
+                            <i class="fa fa-search"></i>
+                          </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <div class="sidebar-widget widget_recent_entries">
+                <h3 class="sidebar-header">Recent posts</h3>
+                <ul>
+                  <% @posts.each do |post| %>
+                      <li>
+                          <div class="post-icon">
+                              <i class="fa fa-file-text"></i>
+                          </div>
+                          <%= link_to post.title, post %>
+                          <small><%= post.created_at.strftime('%A, %B %d') %></small>
+                      </li>
+                    <% end %>
+                </ul>
+            </div>
+            <div class="sidebar-widget widget_oxy_twitter">
+                <h3 class="sidebar-header">Twitter feed</h3>
+                <ul>
+                    <li>
+                        RT @<a href="http://twitter.com/maguay">maguay</a>: Making a new @
+                        <a href="http://twitter.com/TryGhost">TryGhost</a>
+                        theme? @
+                        <a href="http://twitter.com/Envato">Envato</a>
+                        and @
+                        <a href="http://twitter.com/ThemeForest">ThemeForest</a>
+                        have doubled their bounty for great new themes:
+                        <a href="http://t.co/MqpDozDevG" rel="nofollow">http://t.co/MqpDozDevG</a>
+                        <small class="block text-italic">1&nbsp;day&nbsp;ago</small>
+                    </li>
+                    <li>
+                        RT @<a href="http://twitter.com/maguay">maguay</a>: Making a new @
+                        <a href="http://twitter.com/TryGhost">TryGhost</a>
+                        theme? @
+                        <a href="http://twitter.com/Envato">Envato</a>
+                        and @
+                        <a href="http://twitter.com/ThemeForest">ThemeForest</a>
+                        have doubled their bounty for great new themes:
+                        <a href="http://t.co/MqpDozDevG" rel="nofollow">http://t.co/MqpDozDevG</a>
+                        <small class="block text-italic">1&nbsp;day&nbsp;ago</small>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
     </div>
   </section>
 </div>
