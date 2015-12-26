@@ -1,0 +1,9 @@
+<h3 class="sidebar-header">Twitter feed</h3>
+<ul>
+    <% $twitter.user_timeline.each do |tweet| %>
+      <li>
+      	<%= link_to "#{tweet.text}", "#{tweet.url}" %><br>
+      	<small class="block text-italic"><%= tweet.created_at.strftime("%Y-%m-%d") %></small>
+      </li>
+    <% end %>
+</ul>
