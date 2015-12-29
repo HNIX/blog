@@ -1,7 +1,13 @@
 @import 'bootstrap.min';
-@import 'theme.min';
-@import 'color-defaults.min';
+@import 'theme';
+@import 'color-defaults';
 @import 'swatch-white-black.min';
 @import 'swatch-blue-white.min';
 @import 'swatch-white-blue.min';
 @import 'fonts.min';
+
+footer#footer {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-color: rgba(50,50,50,0.2);
+}

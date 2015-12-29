@@ -4974,6 +4974,8 @@ pre {
 
 #masthead.navbar {
   min-height: 90px;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(84, 84, 84, 0.2);
 }
 
 #masthead.navbar-scrolled, #masthead.navbar-animate-display {

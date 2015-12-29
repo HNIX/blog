@@ -41,9 +41,6 @@
                         <%= link_to "Projects", projects_path %>
                     </li>
                     <li>
-                        <%= link_to "Videos", videos_path %>
-                    </li>
-                    <li>
                         <%= link_to "Contact", new_contact_path %>
                     </li>
                     <% if user_signed_in? %>
@@ -67,12 +64,12 @@
 
   <%= yield %>
 
-  <footer id="footer" role="contentinfo">
-      <section class="section swatch-blue-white">
+  <footer id="footer" role="contentinfo" class="footer-section">
+      <section class="section swatch-white-blue">
           <div class="container">
               <div class="row">
                   <div class="col-md-12 text-center">
-                      <div id="swatch_social-2" class="sidebar-widget  widget_swatch_social">
+                      <div id="swatch_social-2" class="widget_swatch_social">
                           <ul class="unstyled inline small-screen-center social-icons social-background social-big">
                               <li>
                                   <a target="_blank" href="https://twitter.com/NixMediaGroup">
@@ -91,7 +88,7 @@
                               </li>
                           </ul>
                       </div>
-                      <div id="text-4" class="sidebar-widget widget_text">
+                      <div id="text-4" class="widget_text">
                           <div class="textwidget">Hunter Nix 2015 ALL RIGHTS RESERVED
                           </div>
                       </div>
