@@ -51,16 +51,16 @@
         </div>
         <aside class="col-md-3 sidebar">
             <div class="sidebar-widget widget_search">
-                <form>
-                    <div class="input-group">
-                        <input class="form-control" placeholder="search" type="text">
-                        <span class="input-group-btn">
-                          <button class="btn" type="submit">
-                            <i class="fa fa-search"></i>
-                          </button>
-                        </span>
-                    </div>
-                </form>
+              <%= form_tag(posts_path, :method => "get") do %>
+                <div class="input-group">
+                  <%= text_field_tag :search, params[:search], :class => "form-control", placeholder: "Search Posts" %>
+                  <span class="input-group-btn">
+                    <%= button_tag(type: "submit", class: "btn") do %>
+                      <i class="fa fa-search"></i>
+                    <% end %>
+                  </span>
+                </div>
+              <% end %>
             </div>
             <div class="sidebar-widget widget_recent_entries">
                 <h3 class="sidebar-header">Recent posts</h3>

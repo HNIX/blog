@@ -3,7 +3,7 @@
   <head>
     <title>Hunter Nix - Marketing Technologist</title>
       <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
@@ -22,20 +22,20 @@
             </div>
             <nav class="collapse navbar-collapse main-navbar" role="navigation">
                 <div class="sidebar-widget widget_search pull-right">
-                    <form>
-                        <div class="input-group">
-                            <input class="form-control" type="text" placeholder="Search here....">
-                            <span class="input-group-btn">
-                        <button class="btn" type="submit">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </span>
-                        </div>
-                    </form>
+                    <%= form_tag(posts_path, :method => "get") do %>
+                      <div class="input-group">
+                          <%= text_field_tag :search, params[:search], :class => "form-control", placeholder: "Search Posts" %>
+                          <span class="input-group-btn">
+                            <%= button_tag(type: "submit", class: "btn") do %>
+                              <i class="fa fa-search"></i>
+                            <% end %>
+                          </span>
+                      </div>
+                    <% end %>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <%= link_to "Articles", posts_path %>
+                        <%= link_to "Articles & Videos", posts_path %>
                     </li>
                     <li>
                         <%= link_to "Projects", projects_path %>
