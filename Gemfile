@@ -15,11 +15,11 @@ gem 'will_paginate', '~> 3.0', '>= 3.0.7'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'twitter', '~> 5.15'
-gem 'envyable'
-
+gem 'aws-sdk', '~> 2'
 
 group :development, :test do
   gem 'byebug'
+  gem 'dotenv-rails'
 end
 
 group :development do
