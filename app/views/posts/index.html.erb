@@ -18,7 +18,11 @@
     	                            </small>
     	                            <div class="post-icon flat-shadow flat-hex">
     	                                <div class="hex hex-big">
-    	                                    <i class="fa fa-file-text"></i>
+    	                                    <% if post.link.present? %>
+                                              <i class="fa fa-video-camera"></i> 
+                                            <% else %>
+                                              <i class="fa fa-file-text"></i>
+                                            <% end %> 
     	                                </div>
     	                            </div>
     	                        </div>
@@ -57,7 +61,11 @@
                         	<% @posts.each do |post| %>
 	                            <li>
 	                                <div class="post-icon">
-	                                    <i class="fa fa-file-text"></i>
+	                                    <% if post.link.present? %>
+                                          <i class="fa fa-video-camera"></i> 
+                                        <% else %>
+                                          <i class="fa fa-file-text"></i>
+                                        <% end %> 
 	                                </div>
 	                                <%= link_to post.title, post %>
 	                                <small><%= post.created_at.strftime('%A, %B %d') %></small>

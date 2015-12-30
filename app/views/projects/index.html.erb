@@ -21,9 +21,9 @@
 		                                  <%= project.created_at.strftime('%A, %B %d') %>
 		                                </small>
 		                                <p><%= truncate project.description, length:75 %></p>
-		                                <a class="link" href="portfolio-item-big.html">
+		                                <%= link_to project, :class => "link" do %>
 		                                    <i class="fa fa-link"></i>
-		                                </a>
+		                                <% end %>
 		                            </figcaption>
 		                        </figure>
 		                    </div>
@@ -41,16 +41,16 @@
 	    </div>
 	    <div class="container">
 	        <header class="section-header underline">
-	            <h1 class="headline super hairline">Got an idea?</h1>
-	            <p class="">He&#x27;s the exact opposite of the hero. And most times they&#x27;re friends, like you and me! I should&#x27;ve known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
+	            <h1 class="headline super hairline">Have an idea?</h1>
+	            <p class="">Contact us with ideas for new projects, videos, articles and more...</p>
 	        </header>
 	        <div class="text-center">
-	            <a class="btn btn-primary btn-lg btn-icon-right pull-center" href="#">
-	Lets make it happen
-	<div class="hex-alt hex-alt-big">
-	<i class="fa fa-rocket" data-animation="tada"></i>
-	</div>
-	</a>
+	            <%= link_to new_contact_path, :class => "btn btn-primary btn-lg btn-icon-right pull-center" do %>
+					Lets make it happen
+					<div class="hex-alt hex-alt-big">
+					<i class="fa fa-rocket" data-animation="tada"></i>
+					</div>
+				<% end %>
 	        </div>
 	    </div>
 	</section>

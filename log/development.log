@@ -65489,3 +65489,1404 @@ Processing by WelcomeController#index as */*
   Rendered shared/_tweets.html.erb (156.2ms)
   Rendered welcome/index.html.erb within layouts/application (181.0ms)
 Completed 200 OK in 269ms (Views: 268.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 13:43:38 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (243.0ms)
+  Rendered welcome/index.html.erb within layouts/application (383.1ms)
+Completed 200 OK in 594ms (Views: 554.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-29 13:43:39 -0600
+
+
+Started GET "/assets/application.self-961ad8a0ed90c668c7cc2db340f6f4e54b2f90514dce6719af8e1f0fe4f3b916.css?body=1" for ::1 at 2015-12-29 13:43:39 -0600
+
+
+Started GET "/assets/packages.min.self-74804b9f98cbba830359b0cfabe70886fd9c7ae4879ffcfa867a3d6c9f7eabac.js?body=1" for ::1 at 2015-12-29 13:43:39 -0600
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-12-29 13:43:39 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-29 13:43:39 -0600
+
+
+Started GET "/assets/rails-thoughts-957cfc1d1f7e8738002b685648391bf4d0ff95a029d44e1c8c7d2c1bce756217.png" for ::1 at 2015-12-29 13:43:39 -0600
+
+
+Started GET "/assets/theme.min.self-ba178c3d4cb065636392fc6d2abf60e2a75039d5de0922037006c5f2195a498d.js?body=1" for ::1 at 2015-12-29 13:43:39 -0600
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 13:43:39 -0600
+
+
+Started GET "/assets/design/section-bg/RT-BG-41a5b8d7fbcc5b8d20b7ca04cdba8a43ca96a8703985e106421424259b8d18f2.png" for ::1 at 2015-12-29 13:43:39 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 13:43:39 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 13:43:40 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (208.4ms)
+  Rendered welcome/index.html.erb within layouts/application (253.4ms)
+Completed 200 OK in 375ms (Views: 373.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 13:43:40 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (168.7ms)
+  Rendered welcome/index.html.erb within layouts/application (192.2ms)
+Completed 200 OK in 296ms (Views: 294.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 13:43:40 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 13:43:40 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (166.8ms)
+  Rendered welcome/index.html.erb within layouts/application (200.9ms)
+Completed 200 OK in 330ms (Views: 328.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 13:43:41 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 13:43:41 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (183.8ms)
+  Rendered welcome/index.html.erb within layouts/application (213.5ms)
+Completed 200 OK in 307ms (Views: 305.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 13:46:58 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered welcome/index.html.erb within layouts/application (24.2ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `link' for nil:NilClass):
+    34:                       </small>
+    35:                       <div class="post-icon flat-shadow flat-hex">
+    36:                           <div class="hex hex-big">
+    37:                               <% if @post.link.present? %>
+    38:                                 <i class="fa fa-video-camera"></i> 
+    39:                               <% else %>
+    40:                                 <i class="fa fa-file-text"></i>
+  app/views/welcome/index.html.erb:37:in `block in _app_views_welcome_index_html_erb__3362576542934849912_70113915734140'
+  app/views/welcome/index.html.erb:26:in `_app_views_welcome_index_html_erb__3362576542934849912_70113915734140'
+
+
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.3ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.3ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (71.7ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (168.2ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 13:48:18 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (185.5ms)
+  Rendered welcome/index.html.erb within layouts/application (202.1ms)
+Completed 200 OK in 284ms (Views: 282.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-29 13:48:19 -0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-29 13:48:19 -0600
+
+
+Started GET "/assets/application.self-961ad8a0ed90c668c7cc2db340f6f4e54b2f90514dce6719af8e1f0fe4f3b916.css?body=1" for ::1 at 2015-12-29 13:48:19 -0600
+
+
+Started GET "/assets/packages.min.self-74804b9f98cbba830359b0cfabe70886fd9c7ae4879ffcfa867a3d6c9f7eabac.js?body=1" for ::1 at 2015-12-29 13:48:19 -0600
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-12-29 13:48:19 -0600
+
+
+Started GET "/assets/rails-thoughts-957cfc1d1f7e8738002b685648391bf4d0ff95a029d44e1c8c7d2c1bce756217.png" for ::1 at 2015-12-29 13:48:19 -0600
+
+
+Started GET "/assets/theme.min.self-ba178c3d4cb065636392fc6d2abf60e2a75039d5de0922037006c5f2195a498d.js?body=1" for ::1 at 2015-12-29 13:48:19 -0600
+
+
+Started GET "/assets/design/section-bg/RT-BG-41a5b8d7fbcc5b8d20b7ca04cdba8a43ca96a8703985e106421424259b8d18f2.png" for ::1 at 2015-12-29 13:48:19 -0600
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 13:48:19 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 13:48:19 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 13:48:19 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (155.7ms)
+  Rendered welcome/index.html.erb within layouts/application (190.4ms)
+Completed 200 OK in 295ms (Views: 293.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 13:48:19 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (249.8ms)
+  Rendered welcome/index.html.erb within layouts/application (272.4ms)
+Completed 200 OK in 355ms (Views: 353.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 13:48:20 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 13:48:20 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (462.7ms)
+  Rendered welcome/index.html.erb within layouts/application (486.8ms)
+Completed 200 OK in 593ms (Views: 591.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 13:48:20 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 13:48:20 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (194.1ms)
+  Rendered welcome/index.html.erb within layouts/application (216.7ms)
+Completed 200 OK in 313ms (Views: 312.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 13:49:19 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered welcome/index.html.erb within layouts/application (28.0ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `cs' for #<#<Class:0x007f8956179d28>:0x007f8958bae0a8>):
+    45:                   <div class="post-body">
+    46:                       <p>
+    47:                       </p>
+    48:                       <%= link_to "read more", cs %>
+    49:                   </div>
+    50:               </article>
+    51:               <hr>
+  app/views/welcome/index.html.erb:48:in `block in _app_views_welcome_index_html_erb__3362576542934849912_70113937942280'
+  app/views/welcome/index.html.erb:26:in `_app_views_welcome_index_html_erb__3362576542934849912_70113937942280'
+
+
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.2ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.7ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (151.2ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 13:49:33 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (201.1ms)
+  Rendered welcome/index.html.erb within layouts/application (216.8ms)
+Completed 200 OK in 301ms (Views: 299.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/rails-thoughts-957cfc1d1f7e8738002b685648391bf4d0ff95a029d44e1c8c7d2c1bce756217.png" for ::1 at 2015-12-29 13:49:33 -0600
+
+
+Started GET "/assets/application.self-961ad8a0ed90c668c7cc2db340f6f4e54b2f90514dce6719af8e1f0fe4f3b916.css?body=1" for ::1 at 2015-12-29 13:49:33 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-29 13:49:33 -0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-29 13:49:33 -0600
+
+
+Started GET "/assets/packages.min.self-74804b9f98cbba830359b0cfabe70886fd9c7ae4879ffcfa867a3d6c9f7eabac.js?body=1" for ::1 at 2015-12-29 13:49:33 -0600
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-12-29 13:49:33 -0600
+
+
+Started GET "/assets/theme.min.self-ba178c3d4cb065636392fc6d2abf60e2a75039d5de0922037006c5f2195a498d.js?body=1" for ::1 at 2015-12-29 13:49:33 -0600
+
+
+Started GET "/assets/design/section-bg/RT-BG-41a5b8d7fbcc5b8d20b7ca04cdba8a43ca96a8703985e106421424259b8d18f2.png" for ::1 at 2015-12-29 13:49:33 -0600
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 13:49:33 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 13:49:33 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 13:49:33 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (151.9ms)
+  Rendered welcome/index.html.erb within layouts/application (186.3ms)
+Completed 200 OK in 279ms (Views: 277.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 13:49:34 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (165.0ms)
+  Rendered welcome/index.html.erb within layouts/application (184.2ms)
+Completed 200 OK in 271ms (Views: 269.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 13:49:34 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 13:49:34 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (152.2ms)
+  Rendered welcome/index.html.erb within layouts/application (180.5ms)
+Completed 200 OK in 277ms (Views: 275.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 13:49:34 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 13:49:34 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (151.9ms)
+  Rendered welcome/index.html.erb within layouts/application (176.4ms)
+Completed 200 OK in 273ms (Views: 271.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-12-29 20:11:31 -0600
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.7ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered shared/_tweets.html.erb (522.5ms)
+  Rendered posts/index.html.erb within layouts/application (562.0ms)
+Completed 200 OK in 724ms (Views: 716.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:11:32 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 20:11:32 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:11:32 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (422.9ms)
+  Rendered welcome/index.html.erb within layouts/application (455.7ms)
+Completed 200 OK in 562ms (Views: 559.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:11:33 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (429.4ms)
+  Rendered welcome/index.html.erb within layouts/application (448.4ms)
+Completed 200 OK in 542ms (Views: 538.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:11:33 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:11:33 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (485.4ms)
+  Rendered welcome/index.html.erb within layouts/application (519.6ms)
+Completed 200 OK in 614ms (Views: 613.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:11:34 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:11:34 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (443.2ms)
+  Rendered welcome/index.html.erb within layouts/application (468.2ms)
+Completed 200 OK in 565ms (Views: 563.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for ::1 at 2015-12-29 20:12:06 -0600
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered shared/_tweets.html.erb (844.1ms)
+  Rendered posts/index.html.erb within layouts/application (850.8ms)
+Completed 200 OK in 948ms (Views: 947.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:12:08 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 20:12:08 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:12:08 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (176.2ms)
+  Rendered welcome/index.html.erb within layouts/application (202.9ms)
+Completed 200 OK in 301ms (Views: 299.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:12:08 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (177.0ms)
+  Rendered welcome/index.html.erb within layouts/application (201.3ms)
+Completed 200 OK in 291ms (Views: 289.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:12:08 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:12:08 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (173.6ms)
+  Rendered welcome/index.html.erb within layouts/application (198.9ms)
+Completed 200 OK in 301ms (Views: 299.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:12:09 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:12:09 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (237.7ms)
+  Rendered welcome/index.html.erb within layouts/application (266.8ms)
+Completed 200 OK in 370ms (Views: 368.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:12:10 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (231.5ms)
+  Rendered welcome/index.html.erb within layouts/application (245.5ms)
+Completed 200 OK in 334ms (Views: 333.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:12:11 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 20:12:11 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:12:11 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (177.0ms)
+  Rendered welcome/index.html.erb within layouts/application (211.5ms)
+Completed 200 OK in 337ms (Views: 335.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:12:11 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (191.9ms)
+  Rendered welcome/index.html.erb within layouts/application (214.2ms)
+Completed 200 OK in 353ms (Views: 350.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:12:12 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:12:12 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (187.1ms)
+  Rendered welcome/index.html.erb within layouts/application (216.4ms)
+Completed 200 OK in 350ms (Views: 348.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:12:12 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:12:12 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (222.6ms)
+  Rendered welcome/index.html.erb within layouts/application (251.2ms)
+Completed 200 OK in 362ms (Views: 361.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2015-12-29 20:14:06 -0600
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT "projects".* FROM "projects"  ORDER BY created_at desc
+  Rendered projects/index.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 138ms (Views: 131.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:14:07 -0600
+
+
+Started GET "/images/shadow-left.png" for ::1 at 2015-12-29 20:14:07 -0600
+
+
+Started GET "/images/shadow-right.png" for ::1 at 2015-12-29 20:14:07 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 20:14:07 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:14:07 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (396.6ms)
+  Rendered welcome/index.html.erb within layouts/application (438.3ms)
+Completed 200 OK in 540ms (Views: 537.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:14:07 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (191.7ms)
+  Rendered welcome/index.html.erb within layouts/application (213.5ms)
+Completed 200 OK in 311ms (Views: 310.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:14:08 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:14:08 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (183.5ms)
+  Rendered welcome/index.html.erb within layouts/application (199.3ms)
+Completed 200 OK in 288ms (Views: 286.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:14:08 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (199.8ms)
+  Rendered welcome/index.html.erb within layouts/application (216.2ms)
+Completed 200 OK in 306ms (Views: 304.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:14:08 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (175.7ms)
+  Rendered welcome/index.html.erb within layouts/application (201.7ms)
+Completed 200 OK in 300ms (Views: 297.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:14:09 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:14:09 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (212.2ms)
+  Rendered welcome/index.html.erb within layouts/application (239.2ms)
+Completed 200 OK in 352ms (Views: 350.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for ::1 at 2015-12-29 20:14:11 -0600
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered shared/_tweets.html.erb (173.7ms)
+  Rendered posts/index.html.erb within layouts/application (180.0ms)
+Completed 200 OK in 261ms (Views: 259.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:14:12 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 20:14:12 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:14:12 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (189.5ms)
+  Rendered welcome/index.html.erb within layouts/application (221.9ms)
+Completed 200 OK in 343ms (Views: 341.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:14:12 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (197.6ms)
+  Rendered welcome/index.html.erb within layouts/application (217.5ms)
+Completed 200 OK in 300ms (Views: 298.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:14:12 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:14:12 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (193.4ms)
+  Rendered welcome/index.html.erb within layouts/application (220.8ms)
+Completed 200 OK in 327ms (Views: 326.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:14:13 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:14:13 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (165.1ms)
+  Rendered welcome/index.html.erb within layouts/application (192.0ms)
+Completed 200 OK in 285ms (Views: 283.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:15:08 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (209.9ms)
+  Rendered welcome/index.html.erb within layouts/application (225.7ms)
+Completed 200 OK in 310ms (Views: 308.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:15:09 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 20:15:09 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:15:09 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (211.3ms)
+  Rendered welcome/index.html.erb within layouts/application (256.4ms)
+Completed 200 OK in 363ms (Views: 361.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:15:10 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (2185.3ms)
+  Rendered welcome/index.html.erb within layouts/application (2210.2ms)
+Completed 200 OK in 2304ms (Views: 2302.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:15:12 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:15:12 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (187.8ms)
+  Rendered welcome/index.html.erb within layouts/application (218.3ms)
+Completed 200 OK in 310ms (Views: 309.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:15:12 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:15:12 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (191.2ms)
+  Rendered welcome/index.html.erb within layouts/application (219.2ms)
+Completed 200 OK in 319ms (Views: 317.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2015-12-29 20:20:56 -0600
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"  ORDER BY created_at desc
+  Rendered projects/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 107ms (Views: 106.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:20:56 -0600
+
+
+Started GET "/images/shadow-right.png" for ::1 at 2015-12-29 20:20:56 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 20:20:56 -0600
+
+
+Started GET "/images/shadow-left.png" for ::1 at 2015-12-29 20:20:56 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:20:56 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (210.1ms)
+  Rendered welcome/index.html.erb within layouts/application (251.0ms)
+Completed 200 OK in 361ms (Views: 359.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:20:57 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (169.8ms)
+  Rendered welcome/index.html.erb within layouts/application (189.7ms)
+Completed 200 OK in 275ms (Views: 273.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:20:57 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:20:57 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (172.6ms)
+  Rendered welcome/index.html.erb within layouts/application (193.6ms)
+Completed 200 OK in 285ms (Views: 284.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:20:57 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (172.6ms)
+  Rendered welcome/index.html.erb within layouts/application (190.0ms)
+Completed 200 OK in 272ms (Views: 270.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:20:57 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (164.3ms)
+  Rendered welcome/index.html.erb within layouts/application (189.8ms)
+Completed 200 OK in 290ms (Views: 288.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:20:58 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:20:58 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (189.1ms)
+  Rendered welcome/index.html.erb within layouts/application (213.9ms)
+Completed 200 OK in 305ms (Views: 303.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for ::1 at 2015-12-29 20:30:16 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"  ORDER BY created_at desc[0m
+  Rendered projects/index.html.erb within layouts/application (36.9ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `contact_path' for #<#<Class:0x007f89553df0f0>:0x007f89555dc2e0>):
+    45: 	            <p class="">Contact us with ideas for new projects, videos, articles and more...</p>
+    46: 	        </header>
+    47: 	        <div class="text-center">
+    48: 	            <%= link_to contact_path, :class => "btn btn-primary btn-lg btn-icon-right pull-center" do %>
+    49: 					Lets make it happen
+    50: 					<div class="hex-alt hex-alt-big">
+    51: 					<i class="fa fa-rocket" data-animation="tada"></i>
+  app/views/projects/index.html.erb:48:in `_app_views_projects_index_html_erb___3377050197614371039_70113915559580'
+
+
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.6ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.1ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (160.5ms)
+
+
+Started GET "/projects" for ::1 at 2015-12-29 20:31:14 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"  ORDER BY created_at desc
+  Rendered projects/index.html.erb within layouts/application (142.2ms)
+Completed 200 OK in 341ms (Views: 330.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-961ad8a0ed90c668c7cc2db340f6f4e54b2f90514dce6719af8e1f0fe4f3b916.css?body=1" for ::1 at 2015-12-29 20:31:14 -0600
+
+
+Started GET "/assets/packages.min.self-74804b9f98cbba830359b0cfabe70886fd9c7ae4879ffcfa867a3d6c9f7eabac.js?body=1" for ::1 at 2015-12-29 20:31:14 -0600
+
+
+Started GET "/assets/theme.min.self-ba178c3d4cb065636392fc6d2abf60e2a75039d5de0922037006c5f2195a498d.js?body=1" for ::1 at 2015-12-29 20:31:14 -0600
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-12-29 20:31:14 -0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-29 20:31:14 -0600
+
+
+Started GET "/assets/rails-thoughts-957cfc1d1f7e8738002b685648391bf4d0ff95a029d44e1c8c7d2c1bce756217.png" for ::1 at 2015-12-29 20:31:14 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-29 20:31:14 -0600
+
+
+Started GET "/assets/design/vector/img-8-600x518-e2af21949b668c053cb0850330bcb77020a990c14ae5da35340d83dba6058489.png" for ::1 at 2015-12-29 20:31:14 -0600
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:31:14 -0600
+
+
+Started GET "/images/shadow-right.png" for ::1 at 2015-12-29 20:31:15 -0600
+
+
+Started GET "/images/shadow-left.png" for ::1 at 2015-12-29 20:31:15 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 20:31:15 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:15 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.8ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (195.4ms)
+  Rendered welcome/index.html.erb within layouts/application (249.0ms)
+Completed 200 OK in 418ms (Views: 373.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:15 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.8ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (228.5ms)
+  Rendered welcome/index.html.erb within layouts/application (260.5ms)
+Completed 200 OK in 382ms (Views: 379.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:31:15 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:15 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (1225.2ms)
+  Rendered welcome/index.html.erb within layouts/application (1246.7ms)
+Completed 200 OK in 1329ms (Views: 1327.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:17 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.9ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (167.2ms)
+  Rendered welcome/index.html.erb within layouts/application (182.4ms)
+Completed 200 OK in 274ms (Views: 272.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:17 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (164.9ms)
+  Rendered welcome/index.html.erb within layouts/application (192.2ms)
+Completed 200 OK in 301ms (Views: 299.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:31:17 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:17 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (343.5ms)
+  Rendered welcome/index.html.erb within layouts/application (370.3ms)
+Completed 200 OK in 480ms (Views: 477.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts/new" for ::1 at 2015-12-29 20:31:22 -0600
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (33.8ms)
+  Rendered contacts/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 149ms (Views: 140.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:31:23 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:23 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (162.2ms)
+  Rendered welcome/index.html.erb within layouts/application (197.0ms)
+Completed 200 OK in 304ms (Views: 302.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:31:23 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:23 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (345.2ms)
+  Rendered welcome/index.html.erb within layouts/application (372.0ms)
+Completed 200 OK in 476ms (Views: 473.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:31:24 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:24 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (162.9ms)
+  Rendered welcome/index.html.erb within layouts/application (191.7ms)
+Completed 200 OK in 295ms (Views: 294.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for ::1 at 2015-12-29 20:31:29 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"  ORDER BY created_at desc[0m
+  Rendered projects/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 105ms (Views: 103.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:31:29 -0600
+
+
+Started GET "/images/shadow-left.png" for ::1 at 2015-12-29 20:31:29 -0600
+
+
+Started GET "/images/shadow-right.png" for ::1 at 2015-12-29 20:31:29 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 20:31:29 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:29 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (656.8ms)
+  Rendered welcome/index.html.erb within layouts/application (684.3ms)
+Completed 200 OK in 793ms (Views: 791.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:30 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (153.5ms)
+  Rendered welcome/index.html.erb within layouts/application (172.9ms)
+Completed 200 OK in 260ms (Views: 258.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:31:30 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:30 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (165.8ms)
+  Rendered welcome/index.html.erb within layouts/application (180.4ms)
+Completed 200 OK in 266ms (Views: 264.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:30 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (163.6ms)
+  Rendered welcome/index.html.erb within layouts/application (179.1ms)
+Completed 200 OK in 270ms (Views: 268.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:31 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (155.4ms)
+  Rendered welcome/index.html.erb within layouts/application (181.3ms)
+Completed 200 OK in 278ms (Views: 275.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:31:31 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:31:31 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (152.5ms)
+  Rendered welcome/index.html.erb within layouts/application (176.5ms)
+Completed 200 OK in 282ms (Views: 279.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/first-test-project" for ::1 at 2015-12-29 20:32:21 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"first-test-project"}
+  [1m[35mProject Load (0.7ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["slug", "first-test-project"]]
+  Rendered projects/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 99ms (Views: 96.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/assets/images/design/vector/img-3-1200x600.png" for ::1 at 2015-12-29 20:32:22 -0600
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:32:22 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:32:22 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (231.7ms)
+  Rendered welcome/index.html.erb within layouts/application (262.1ms)
+Completed 200 OK in 367ms (Views: 365.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:32:22 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (185.4ms)
+  Rendered welcome/index.html.erb within layouts/application (210.6ms)
+Completed 200 OK in 300ms (Views: 298.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:32:23 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:32:23 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (295.9ms)
+  Rendered welcome/index.html.erb within layouts/application (321.7ms)
+Completed 200 OK in 440ms (Views: 438.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:32:23 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:32:23 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (175.4ms)
+  Rendered welcome/index.html.erb within layouts/application (204.3ms)
+Completed 200 OK in 295ms (Views: 294.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/assets/images/design/vector/img-3-1200x800.png" for ::1 at 2015-12-29 20:32:26 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:32:26 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (162.8ms)
+  Rendered welcome/index.html.erb within layouts/application (178.7ms)
+Completed 200 OK in 265ms (Views: 263.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-12-29 20:32:54 -0600
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered shared/_tweets.html.erb (873.0ms)
+  Rendered posts/index.html.erb within layouts/application (880.4ms)
+Completed 200 OK in 967ms (Views: 966.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:32:55 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 20:32:55 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:32:55 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (433.7ms)
+  Rendered welcome/index.html.erb within layouts/application (461.0ms)
+Completed 200 OK in 578ms (Views: 575.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:32:56 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (447.4ms)
+  Rendered welcome/index.html.erb within layouts/application (471.9ms)
+Completed 200 OK in 551ms (Views: 550.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:32:57 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:32:57 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (434.1ms)
+  Rendered welcome/index.html.erb within layouts/application (461.5ms)
+Completed 200 OK in 563ms (Views: 561.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:32:57 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:32:57 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (534.2ms)
+  Rendered welcome/index.html.erb within layouts/application (562.3ms)
+Completed 200 OK in 656ms (Views: 655.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2015-12-29 20:33:15 -0600
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"  ORDER BY created_at desc
+  Rendered projects/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 107ms (Views: 105.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:33:16 -0600
+
+
+Started GET "/images/shadow-right.png" for ::1 at 2015-12-29 20:33:16 -0600
+
+
+Started GET "/images/shadow-left.png" for ::1 at 2015-12-29 20:33:16 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 20:33:16 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:33:16 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (4995.5ms)
+  Rendered welcome/index.html.erb within layouts/application (5028.7ms)
+Completed 200 OK in 5127ms (Views: 5125.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:33:21 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (408.3ms)
+  Rendered welcome/index.html.erb within layouts/application (429.7ms)
+Completed 200 OK in 519ms (Views: 517.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:33:22 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:33:22 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (457.5ms)
+  Rendered welcome/index.html.erb within layouts/application (473.9ms)
+Completed 200 OK in 556ms (Views: 554.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:33:22 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (568.2ms)
+  Rendered welcome/index.html.erb within layouts/application (716.5ms)
+Completed 200 OK in 825ms (Views: 824.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:33:23 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (503.4ms)
+  Rendered welcome/index.html.erb within layouts/application (526.7ms)
+Completed 200 OK in 616ms (Views: 615.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:33:24 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:33:24 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (426.0ms)
+  Rendered welcome/index.html.erb within layouts/application (449.9ms)
+Completed 200 OK in 551ms (Views: 549.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects" for ::1 at 2015-12-29 20:35:03 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"  ORDER BY created_at desc[0m
+  Rendered projects/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-29 20:35:03 -0600
+
+
+Started GET "/assets/application.self-961ad8a0ed90c668c7cc2db340f6f4e54b2f90514dce6719af8e1f0fe4f3b916.css?body=1" for ::1 at 2015-12-29 20:35:03 -0600
+
+
+Started GET "/assets/packages.min.self-74804b9f98cbba830359b0cfabe70886fd9c7ae4879ffcfa867a3d6c9f7eabac.js?body=1" for ::1 at 2015-12-29 20:35:03 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-29 20:35:03 -0600
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-12-29 20:35:03 -0600
+
+
+Started GET "/assets/rails-thoughts-957cfc1d1f7e8738002b685648391bf4d0ff95a029d44e1c8c7d2c1bce756217.png" for ::1 at 2015-12-29 20:35:03 -0600
+
+
+Started GET "/assets/theme.min.self-ba178c3d4cb065636392fc6d2abf60e2a75039d5de0922037006c5f2195a498d.js?body=1" for ::1 at 2015-12-29 20:35:03 -0600
+
+
+Started GET "/assets/design/vector/img-8-600x518-e2af21949b668c053cb0850330bcb77020a990c14ae5da35340d83dba6058489.png" for ::1 at 2015-12-29 20:35:03 -0600
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:35:04 -0600
+
+
+Started GET "/images/shadow-right.png" for ::1 at 2015-12-29 20:35:04 -0600
+
+
+Started GET "/images/shadow-left.png" for ::1 at 2015-12-29 20:35:04 -0600
+
+
+Started GET "/images/flat-shadow.png" for ::1 at 2015-12-29 20:35:04 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:35:04 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (214.7ms)
+  Rendered welcome/index.html.erb within layouts/application (245.5ms)
+Completed 200 OK in 348ms (Views: 346.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:35:04 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (183.8ms)
+  Rendered welcome/index.html.erb within layouts/application (201.1ms)
+Completed 200 OK in 289ms (Views: 287.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:35:04 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:35:04 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (156.7ms)
+  Rendered welcome/index.html.erb within layouts/application (174.2ms)
+Completed 200 OK in 265ms (Views: 263.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:35:05 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (159.3ms)
+  Rendered welcome/index.html.erb within layouts/application (181.2ms)
+Completed 200 OK in 265ms (Views: 264.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-12-29 20:35:05 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (149.3ms)
+  Rendered welcome/index.html.erb within layouts/application (179.2ms)
+Completed 200 OK in 280ms (Views: 279.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:35:05 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:35:05 -0600
+Processing by WelcomeController#index as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered shared/_tweets.html.erb (172.7ms)
+  Rendered welcome/index.html.erb within layouts/application (205.2ms)
+Completed 200 OK in 300ms (Views: 298.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/first-test-project" for ::1 at 2015-12-29 20:35:11 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"first-test-project"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["slug", "first-test-project"]]
+  Rendered projects/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 93ms (Views: 91.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/assets/images/design/vector/img-3-1200x600.png" for ::1 at 2015-12-29 20:35:11 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:35:11 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (159.5ms)
+  Rendered welcome/index.html.erb within layouts/application (175.4ms)
+Completed 200 OK in 296ms (Views: 295.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-12-29 20:35:11 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:35:11 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (182.5ms)
+  Rendered welcome/index.html.erb within layouts/application (208.2ms)
+Completed 200 OK in 314ms (Views: 312.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-12-29 20:35:12 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:35:12 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (146.8ms)
+  Rendered welcome/index.html.erb within layouts/application (175.5ms)
+Completed 200 OK in 269ms (Views: 268.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-12-29 20:35:12 -0600
+
+
+Started GET "/" for ::1 at 2015-12-29 20:35:12 -0600
+Processing by WelcomeController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered shared/_tweets.html.erb (181.3ms)
+  Rendered welcome/index.html.erb within layouts/application (206.4ms)
+Completed 200 OK in 307ms (Views: 305.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/first-test-project" for ::1 at 2015-12-29 20:36:37 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"first-test-project"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["slug", "first-test-project"]]
+  Rendered projects/show.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `image' for #<Project:0x007f8816f17c78>):
+    4:             <div class="text-center small-screen-center portfolio-header">
+    5:                 <h1 class="headline super hairline">Sample project</h1>
+    6:             </div>
+    7:             <% if @project.image.present? %>
+    8:                 <figure class="portfolio-figure">
+    9:                     <a class="magnific hover-animate" href="assets/images/design/vector/img-3-1200x800.png" title="Thats a nice image">
+   10:                         <img alt="some image" src="assets/images/design/vector/img-3-1200x600.png">
+  app/views/projects/show.html.erb:7:in `_app_views_projects_show_html_erb___1404836218972480045_70111238598480'
+
+
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.8ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.3ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (69.3ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Hunter/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (153.6ms)

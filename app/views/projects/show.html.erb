@@ -4,12 +4,14 @@
             <div class="text-center small-screen-center portfolio-header">
                 <h1 class="headline super hairline">Sample project</h1>
             </div>
-            <figure class="portfolio-figure">
-                <a class="magnific hover-animate" href="assets/images/design/vector/img-3-1200x800.png" title="Thats a nice image">
-                    <img alt="some image" src="assets/images/design/vector/img-3-1200x600.png">
-                    <i class="fa fa-search-plus"></i>
-                </a>
-            </figure>
+            <% if @project.image.present? %>
+                <figure class="portfolio-figure">
+                    <a class="magnific hover-animate" href="assets/images/design/vector/img-3-1200x800.png" title="Thats a nice image">
+                        <img alt="some image" src="assets/images/design/vector/img-3-1200x600.png">
+                        <i class="fa fa-search-plus"></i>
+                    </a>
+                </figure>
+            <% end %>
             <div class="row">
                 <div class="col-md-9">
                     <small><%= @project.created_at.strftime('%A, %b %d') %></small>

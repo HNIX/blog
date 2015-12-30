@@ -23,25 +23,30 @@
       </header>
       <div class="row">
         <div class="col-md-9">
-          <% @posts.each do |cs| %>
+          <% @posts.each do |post| %>
               <article class="post post-showinfo">
                   <div class="post-head small-screen-center">
                       <h2 class="post-title">
-                        <%= link_to cs.title, cs %>
+                        <%= link_to post.title, post %>
                       </h2>
                       <small class="post-date">
-                        <%= cs.created_at.strftime('%A, %B %d') %>
+                        <%= post.created_at.strftime('%A, %B %d') %>
                       </small>
                       <div class="post-icon flat-shadow flat-hex">
                           <div class="hex hex-big">
-                              <i class="fa fa-file-text"></i>
+                              <% if post.link.present? %>
+                                <i class="fa fa-video-camera"></i> 
+                              <% else %>
+                                <i class="fa fa-file-text"></i>
+                              <% end %>         
                           </div>
                       </div>
                   </div>
                   <div class="post-body">
                       <p>
+                        <%= truncate post.content, length: 200 %>
                       </p>
-                      <%= link_to "read more", cs %>
+                      <%= link_to "read more", post %>
                   </div>
               </article>
               <hr>
@@ -68,7 +73,11 @@
                   <% @posts.each do |post| %>
                       <li>
                           <div class="post-icon">
-                              <i class="fa fa-file-text"></i>
+                              <% if post.link.present? %>
+                                <i class="fa fa-video-camera"></i> 
+                              <% else %>
+                                <i class="fa fa-file-text"></i>
+                              <% end %>
                           </div>
                           <%= link_to post.title, post %>
                           <small><%= post.created_at.strftime('%A, %B %d') %></small>
