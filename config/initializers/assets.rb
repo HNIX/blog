@@ -11,3 +11,5 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( packages.min.js )
 Rails.application.config.assets.precompile += %w( theme.min.js )
+Rails.application.config.assets.precompile += %w( jquery.ui.widget.js )
+Rails.application.config.assets.precompile += %w( jquery.fileupload.js )
