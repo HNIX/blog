@@ -25,7 +25,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @posts = Post.all
+    @posts = Post.all.limit(3).order('created_at DESC')
   end
 
   def edit

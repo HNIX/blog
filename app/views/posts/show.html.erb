@@ -1,16 +1,16 @@
 <div id="content" role="main">
 	<section class="section swatch-white-blue">
-        <div class="container">
-            <% if @post.link.present? %>
-	            <figure class="portfolio-video">
-	              <div class="video-wrapper">
-	                  <div class="fluid-width-video-wrapper" style="padding-top: 50%;">
-	                      <%= embed(@post.link) %>
-	                  </div>
-	              </div>
-	            </figure>
-            <% end %>
-            <div class="row">
+    <div class="container">
+      <% if @post.link.present? %>
+        <figure class="portfolio-video">
+          <div class="video-wrapper">
+              <div class="fluid-width-video-wrapper" style="padding-top: 50%;">
+                  <%= embed(@post.link) %>
+              </div>
+          </div>
+        </figure>
+      <% end %>
+      <div class="row">
 				<div class="col-md-9">
 			    	<p class="date"></p>
 				    <h1 class="super hairline bordered-header">
@@ -29,88 +29,21 @@
 					  </div>
 					<% end %>
 					<br>
-                    <br>
-                    <h1>Comments</h1>
-                    <%= render 'disqus' %>
+          <br>
+          <h1>Comments</h1>
+          <%= render 'disqus' %>
 				</div>
 				<aside class="col-md-3 sidebar">
-                  <% if @post.link.present? %>
-	                  <a class="portfolio-url overlay" href="<%= @post.link %>">
-	                      <span class="overlay">URL</span>
-	                      Go to video
-	                  </a>
-	              <% end %>
-                  <div class="portfolio-share overlay">
-                      <span class="overlay">Share</span>
-                      <ul class="list-inline">
-                        <%= social_share_button_tag(@post.title, :popup => "true", desc: "#{@post.content}", via: "NixMediaGroup") %>
-                        </ul>
-
-                      <!-- <ul class="list-inline">
-                          <li>
-                              <a href="#">
-                                  <i class="fa fa-twitter"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  <i class="fa fa-facebook"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  <i class="fa fa-pinterest"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  <i class="fa fa-google-plus"></i>
-                              </a>
-                          </li>
-                      </ul> -->
-                  </div>
-                    <div class="sidebar-widget widget_recent_entries">
-                        <h3 class="sidebar-header">Recent posts</h3>
-                        <ul>
-                        	<% @posts.each do |post| %>
-	                            <li>
-	                                <div class="post-icon">
-	                                    <i class="fa fa-file-text"></i>
-	                                </div>
-	                                <%= link_to post.title, post %>
-	                                <small><%= post.created_at.strftime('%A, %B %d') %></small>
-	                            </li>
-                            <% end %>
-                        </ul>
-                    </div>
-                    <div class="sidebar-widget widget_oxy_twitter">
-                        <h3 class="sidebar-header">Twitter feed</h3>
-                        <ul>
-                            <li>
-                                RT @<a href="http://twitter.com/maguay">maguay</a>: Making a new @
-                                <a href="http://twitter.com/TryGhost">TryGhost</a>
-                                theme? @
-                                <a href="http://twitter.com/Envato">Envato</a>
-                                and @
-                                <a href="http://twitter.com/ThemeForest">ThemeForest</a>
-                                have doubled their bounty for great new themes:
-                                <a href="http://t.co/MqpDozDevG" rel="nofollow">http://t.co/MqpDozDevG</a>
-                                <small class="block text-italic">1&nbsp;day&nbsp;ago</small>
-                            </li>
-                            <li>
-                                RT @<a href="http://twitter.com/maguay">maguay</a>: Making a new @
-                                <a href="http://twitter.com/TryGhost">TryGhost</a>
-                                theme? @
-                                <a href="http://twitter.com/Envato">Envato</a>
-                                and @
-                                <a href="http://twitter.com/ThemeForest">ThemeForest</a>
-                                have doubled their bounty for great new themes:
-                                <a href="http://t.co/MqpDozDevG" rel="nofollow">http://t.co/MqpDozDevG</a>
-                                <small class="block text-italic">1&nbsp;day&nbsp;ago</small>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
+          <% if @post.link.present? %>
+            <a class="portfolio-url overlay" href="<%= @post.link %>">
+                <span class="overlay">URL</span>
+                Go to video
+            </a>
+          <% end %>
+          <%= render 'shared/social_share' %>
+          <%= render 'shared/recent_posts' %>
+          <%= render 'shared/tweets' %>
+        </aside>
 			</div>
 		</div>
 	</section>

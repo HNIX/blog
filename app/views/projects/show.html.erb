@@ -2,7 +2,7 @@
     <section class="section swatch-white-blue">
         <div class="container">
             <div class="text-center small-screen-center portfolio-header">
-                <h1 class="headline super hairline">Sample project</h1>
+                <h1 class="headline super hairline"><%= @project.title %></h1>
             </div>
             <% if @project.image_url.present? %>
                 <figure class="portfolio-figure">
@@ -29,31 +29,7 @@
                             <%= @project.link %>
                         </a>
                     <% end %>
-                    <div class="portfolio-share overlay">
-                        <span class="overlay">Share</span>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <%= render 'shared/social_share_project' %>
                 </div>
             </div>
         </div>
