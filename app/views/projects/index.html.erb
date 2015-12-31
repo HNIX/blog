@@ -4,33 +4,37 @@
 	        <header class="section-header text-center underline">
 	            <h1 class="headline hyper hairline">Our Work</h1>
 	        </header>
-	        <div class="row">
-	            <div class="text-default os-animation">
-	                <div class="portfolio isotope magnific-all no-transition portfolio-hex portfolio-shadows row">
-	                    <% @projects.each do |project| %>
-		                    <div class="portfolio-item infinite-item col-md-4 col-sm-4 filter-gallery filter-image">
-		                        <figure class="portfolio-figure">
-		                            <a href="portfolio-item-big.html">
-		                                <%= image_tag(project.image_url, :class => "img-responsive", width: "600", height: "518" ) %>
-		                            </a>
-		                            <figcaption>
-		                                <h4>
-		                                	<%= link_to project.title, project %>
-		                                </h4>
-										<small>
-		                                  <%= project.created_at.strftime('%A, %B %d') %>
-		                                </small>
-		                                <p><%= truncate project.description, length:75 %></p>
-		                                <%= link_to project, :class => "link" do %>
-		                                    <i class="fa fa-link"></i>
-		                                <% end %>
-		                            </figcaption>
-		                        </figure>
-		                    </div>
-	                    <% end %>
-	                </div>
-	            </div>
-	        </div>
+	        <% if @projects.present? %>
+		        <div class="row">
+		            <div class="text-default os-animation">
+		                <div class="portfolio isotope magnific-all no-transition portfolio-hex portfolio-shadows row">
+		                    <% @projects.each do |project| %>
+			                    <div class="portfolio-item infinite-item col-md-4 col-sm-4 filter-gallery filter-image">
+			                        <figure class="portfolio-figure">
+			                            <a href="portfolio-item-big.html">
+			                                <%= image_tag(project.image_url, :class => "img-responsive", width: "600", height: "518" ) %>
+			                            </a>
+			                            <figcaption>
+			                                <h4>
+			                                	<%= link_to project.title, project %>
+			                                </h4>
+											<small>
+			                                  <%= project.created_at.strftime('%A, %B %d') %>
+			                                </small>
+			                                <p><%= truncate project.description, length:75 %></p>
+			                                <%= link_to project, :class => "link" do %>
+			                                    <i class="fa fa-link"></i>
+			                                <% end %>
+			                            </figcaption>
+			                        </figure>
+			                    </div>
+		                    <% end %>
+		                </div>
+		            </div>
+		        </div>
+		    <% else %>
+		    	<p class="text-center">We currently do not have any active projects. Please check back soon.</p>    
+		    <% end %>
 	    </div>
 	</section>
 	<section class="section swatch-white-blue has-top">

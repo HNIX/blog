@@ -30,7 +30,11 @@
     	                            <p>
     	                                <%= truncate post.content, length: 200 %>
     	                            </p>
-    	                            <%= link_to "read more", post %>
+    	                            <% if post.link.present? %>
+                                        <%= link_to "Watch Screencast" %>
+                                    <% else %>
+                                        <%= link_to "Read More", post %>
+                                    <% end %>
     	                        </div>
     	                    </article>
                         	<hr>

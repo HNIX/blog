@@ -6,11 +6,7 @@
             </div>
             <% if @project.image_url.present? %>
                 <figure class="portfolio-figure">
-                    <a class="magnific hover-animate" href="assets/images/design/vector/img-3-1200x800.png" title="Thats a nice image">
-                        <%= image_tag(@project.image_url) %>
-                        <img alt="some image" src="assets/images/design/vector/img-3-1200x600.png">
-                        <i class="fa fa-search-plus"></i>
-                    </a>
+                    <%= image_tag(@project.image_url) %>
                 </figure>
             <% end %>
             <div class="row">
@@ -27,10 +23,12 @@
 					<% end %>
                 </div>
                 <div class="col-md-3">
-                    <a class="portfolio-url overlay" href="<%= @project.link %>">
-                        <span class="overlay">URL</span>
-                        <%= @project.link %>
-                    </a>
+                    <% if @project.link.present? %>
+                        <a class="portfolio-url overlay" href="<%= @project.link %>">
+                            <span class="overlay">URL</span>
+                            <%= @project.link %>
+                        </a>
+                    <% end %>
                     <div class="portfolio-share overlay">
                         <span class="overlay">Share</span>
                         <ul class="list-inline">
