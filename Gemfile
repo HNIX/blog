@@ -16,6 +16,8 @@ gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'twitter', '~> 5.15'
 gem 'aws-sdk', '~> 2'
+gem 'social-share-button'
+
 
 group :development, :test do
   gem 'byebug'

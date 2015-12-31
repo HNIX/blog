@@ -43,6 +43,10 @@
                   <div class="portfolio-share overlay">
                       <span class="overlay">Share</span>
                       <ul class="list-inline">
+                        <%= social_share_button_tag(@post.title, :popup => "true", desc: "#{@post.content}", via: "NixMediaGroup") %>
+                        </ul>
+
+                      <!-- <ul class="list-inline">
                           <li>
                               <a href="#">
                                   <i class="fa fa-twitter"></i>
@@ -63,7 +67,7 @@
                                   <i class="fa fa-google-plus"></i>
                               </a>
                           </li>
-                      </ul>
+                      </ul> -->
                   </div>
                     <div class="sidebar-widget widget_recent_entries">
                         <h3 class="sidebar-header">Recent posts</h3>
